@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My survey form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="styles/style.css">
+</head>
+<body>
+    <form action="" id="survey-form">
+        <header>
+            <h1 id="title">My Survey Form</h1>
+            <p id='description'>Thank you for taking the time to help me improve the service</p>
+        </header>
+<div class="form-group">
+    <label id='name-label' for="name">name</label><input type="text" class="general" id='name' placeholder='enter your name'>
+</div>
+<div class="form-group">
+    <label for="email" id='email-label'>email</label><input type="email" class="general" id='email' placeholder='enter your email'>
+</div>
+<div class="form-group">
+    <label for="number" id="number-label">age</label><input type="number" class="general" id='number' placeholder='enter your age' min='4' max='122'>
+</div>
+    <div class='form-group'>
+        <p>which option best describes your current role?</p>
+        <select name="role" class="general" id="dropdown">
+            <option disabled selected value>Select current role</option>
+            <option>student</option>
+            <option>full time job</option>
+            <option>full time learner</option>
+            <option>prefer not to say</option>
+            <option>other</option>
+        </select>
+    </div>
+    <div class='form-group'>
+<p>would you recommend me to a friend?</p>
+<label>
+    <input type="radio" name="user-recommend" class="input-radio" value="definitely">
+    definitely
+</label>
+<label>
+    <input type="radio" name="user-recommend" class="input-radio" value="maybe">
+    maybe
+</label>
+<label>
+    <input type="radio" name="user-recommend" class="input-radio" value="not-sure">
+    not sure
+</label>
+    </div>
+    <div class="form-group">
+        <p>what did you like?</p>
+        <select name="" class="general" id="" required>
+            <option disabled selected value>chose an option</option>
+            <option value="">design</option>
+            <option value="">functional</option>
+            <option value="">fonts</option>
+            <option value="">conversation</option>
+            <option value="">site</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <p>what would you like to see improved?</p>
+        <label>
+            <input type="checkbox" name='prefer'>
+            design
+        </label>
+        <label>
+            <input type="checkbox" name='prefer'>
+            functional
+        </label>
+        <label>
+            <input type="checkbox" name='prefer'>
+            fonts
+        </label>
+        <label>
+            <input type="checkbox" name='prefer'>
+            conversation
+        </label>
+        <label>
+            <input type="checkbox" name='prefer'>
+            site
+        </label>
+    </div>
+    <div class="form-group">
+    <textarea placeholder="enter your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit">submit</button>
+    </div>
+</form>
+</body>
+</html>
